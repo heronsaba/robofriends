@@ -2,6 +2,9 @@ import React from "react";
 import Card from "../Components/Card";
 
 const CardList = ({ robots }) => {
+    if (!robots.length) {
+        return <h1 className="light-red">No robofriends found</h1>
+    }
     return (
         <div>
             {
